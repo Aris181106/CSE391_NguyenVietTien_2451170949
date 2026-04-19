@@ -46,3 +46,22 @@ code sau khi sửa:
 </main>
 <footer>© 2026 ShopTLU</footer>
 ```
+**Nguồn tham chiếu: tuan_1_html5/04_visible_part_html.md + Semantic HTML5 — "Thẻ có ý nghĩa"
+
+## Câu A3:
+
+- Kết quả hiển thị của đoạn code là:
+
+Hộp 1
+
+Text A Text B
+
+Hộp 2 
+
+Text C Text D
+
+Hộp 3
+
+-> Tại vì thẻ `<div>` là block nên chiếm cả dòng, còn thẻ `<span>` là inline nên chỉ chiếm nội dung và có thể nằm cạnh nhau
+
+**Nguồn tham chiếu: tuan_1_html5/04_visible_part_html.md + Block vs Inline — Hai loại element cơ bản
