@@ -65,3 +65,10 @@ Hộp 3
 -> Tại vì thẻ `<div>` là block nên chiếm cả dòng, còn thẻ `<span>` là inline nên chỉ chiếm nội dung và có thể nằm cạnh nhau
 
 **Nguồn tham chiếu: tuan_1_html5/04_visible_part_html.md + Block vs Inline — Hai loại element cơ bản
+
+## Câu A4:
+
+- Sự khác nhau giữa `<thead>`, `<tbody>` và `<tfoot>` là `<thead>` có vai trò là header và là tiêu đề của cột, `<tbody>` có vai trò là body và là dữ liệu chính của bảng còn `<tfoot>` là footer và có vai trò tổng kết bảng
+
+- Các lý do không nên dùng table để tạo layout trang web:
+
