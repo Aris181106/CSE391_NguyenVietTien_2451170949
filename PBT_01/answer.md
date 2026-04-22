@@ -78,18 +78,24 @@ Lỗi 1 : Dòng 1 - Khai báo DOCTYPE không hợp lệ - Sửa thành `<!DOCTYP
 
 Lỗi 2 : Dòng 2 - Lỗi thiếu thẻ đóng cho thẻ `<html>`- Bổ sung `</html>` ở cưối code
 
-Lỗi 3 : Dòng 4 - Lỗi thiếu thẻ đóng cho thẻ `<title>` - Bổ sung `</title>` ở sau chữ Trang web
+Lỗi 3 : Dòng 2 - Thiếu thuộc tính ngôn ngữ - Bổ sung `<html lang="vi">`
 
-Lỗi 4 : Dòng 5 - Lỗi khai báo charset chưa chuẩn - Sửa thành `<meta charset="UTF-8">`
+Lỗi 4 : Dòng 4 - Lỗi thiếu thẻ đóng cho thẻ `<title>` - Bổ sung `</title>` ở sau chữ Trang web
 
-Lỗi 5 : Dòng 12 + 13 - Lỗi sai giá trị thuộc tính href - Sửa thành `1<a href="#home">Trang chủ<a>` và `<a href="#products">Sản phẩm</a>`
+Lỗi 5 : Dòng 5 - Lỗi khai báo charset chưa chuẩn - Sửa thành `<meta charset="UTF-8">`
 
-Lỗi 6 : Dòng 40 - Lỗi có hai thẻ main - Sửa bằng cách cho nội dung của thẻ main thứ 2 vào thẻ main đầu tiên
+Lỗi 6 : Dòng 8 - Lỗi sai thẻ đóng cho thẻ `<h1>` - Sửa thẻ đóng thành `</h1>`
 
-Lỗi 7 : Dòng 45 - Lỗi thiếu thẻ đóng cho thẻ `<p>` - Bổ sung `</p>` ở sau Copyright 2026
+Lỗi 7 : Dòng 12 - Lỗi sai giá trị thuộc tính href - Sửa thành `<a href="#home">Trang chủ</a>` `
 
-Lỗi 8 : Dòng 8 - Lỗi sai thẻ đóng cho thẻ `<h1>` - Sửa thẻ đóng thành `</h1>`
+Lỗi 8 : Dòng 20 - Lỗi thiếu dấu ngoặc kép cho `<img src>` - Sửa thành `<img src = "iphone.jpg">`
 
-Lỗi 9 : Dòng 12 - Lỗi sai thẻ đóng cho thẻ `<a>` - Sửa thẻ đóng thành `</a>`
+Lỗi 9 : Dòng 22 - Thẻ `<p>` và `<b>` sai thứ tự - Sửa thành `<p>`....`<b>`....`</b>`.....`</p>`
 
-Lỗi 10 : Dòng 20 - Lỗi thiếu dấu ngoặc kép cho `<img src>` - Sửa thành `<img src = "iphone.jpg">`
+Lỗi 10 : Dòng 27 - `<table>` thiếu `<thead>` và `<tbody>` - Thêm `<thead>` và `<tbody>`
+
+Lỗi 11 : Dòng 40 - Lỗi có hai thẻ main - Sửa bằng cách cho nội dung của thẻ main thứ 2 vào thẻ main đầu tiên
+
+Lỗi 12 : Dòng 45 - Lỗi thiếu thẻ đóng cho thẻ `<p>` - Bổ sung `</p>` ở sau Copyright 2026
+
+
