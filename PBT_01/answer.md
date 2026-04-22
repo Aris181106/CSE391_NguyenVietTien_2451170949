@@ -98,4 +98,6 @@ Lỗi 11 : Dòng 40 - Lỗi có hai thẻ main - Sửa bằng cách cho nội du
 
 Lỗi 12 : Dòng 45 - Lỗi thiếu thẻ đóng cho thẻ `<p>` - Bổ sung `</p>` ở sau Copyright 2026
 
+## Câu B4
 
+3. Action : /tim-kiem, type : text
