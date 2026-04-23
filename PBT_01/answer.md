@@ -101,3 +101,6 @@ Lỗi 12 : Dòng 45 - Lỗi thiếu thẻ đóng cho thẻ `<p>` - Bổ sung `</
 ## Câu B4
 
 3. Action : /tim-kiem, type : text
+
+## Câu C1
+
