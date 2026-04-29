@@ -54,6 +54,7 @@ Trường hợp 5
 1. `<label for="email">` quan trong cho screen reader bởi vì screen reader sẽ đọc email edit text, giúp người dùng biết ô này để nhập gì
 
 2. Dùng `<fieldset>` + `<legend>` khi nhập các thông tin có liên quan đến nhau
+
 Ví dụ: 
 ```
         <fieldset>
@@ -62,3 +63,21 @@ Ví dụ:
     <input type="text" id="street" name="street">
         </fieldset>
 ```
+3. `<aria-label>` dùng để mô tả icon nút, ví dụ trong phần accessibility, `<aria-label>` giúp screen reader hiểu được icon 🛒 là gửi đơn hàng
+
+- Không dùng `<aria-label>` khi đã có `<label>` vì sẽ bị lặp
+
+## Câu A4
+
+1. Thuộc tính loading="lazy" trên thẻ `<img>` dùng để tải ảnh khi user scroll đến và làm cho trang web load nhanh hơn và không dùng cho ảnh đầu tiên (logo) mà user thấy.
+
+2. Cần dùng nhiều `<source>` trong thẻ `<video>` là để tránh việc có 1 `<source>` duy nhất bị lỗi thì còn có 1 `<source>` khác thay thế
+
+- 3 format video phổ biến:
+
++ webm
++ mp4
++ ogg
+
+
+
