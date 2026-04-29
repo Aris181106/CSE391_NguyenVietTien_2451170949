@@ -24,27 +24,41 @@
 
 ## Câu A2:
 
-<!-- Trường hợp 1 -->
-<input type="text" required value="">   <!-- User để trống --> 
+Trường hợp 1
+<input type="text" required value="">   
 
 - Hệ thống báo lỗi do người dùng chưa nhập
 
-<!-- Trường hợp 2 -->
-<input type="email" value="abc">        <!-- User gõ "abc" --
+Trường hợp 2
+<input type="email" value="abc">        
 
 - Hệ thống báo lỗi vì type email, user chưa gõ @
 
-<!-- Trường hợp 3 -->
-<input type="number" min="1" max="10" value="15"> <!-- User gõ 15 -->
+Trường hợp 3
+<input type="number" min="1" max="10" value="15"> 
 
 - Hệ thống báo lỗi do user vượt quá giá trị tối đa 
 
-<!-- Trường hợp 4 -->
-<input type="text" pattern="[0-9]{10}" value="abc123"> <!-- User gõ "abc123" --
+Trường hợp 4
+<input type="text" pattern="[0-9]{10}" value="abc123"> 
 
 - Hệ thống báo lỗi do abc không thuộc pattern
 
-<!-- Trường hợp 5 -->
-<input type="password" minlength="8" value="123">  <!-- User gõ "123" -->
+Trường hợp 5
+<input type="password" minlength="8" value="123">  
 
 - Hệ thống hoạt động bình thường, không có lỗi gì
+
+## Câu A3
+
+1. `<label for="email">` quan trong cho screen reader bởi vì screen reader sẽ đọc email edit text, giúp người dùng biết ô này để nhập gì
+
+2. Dùng `<fieldset>` + `<legend>` khi nhập các thông tin có liên quan đến nhau
+Ví dụ: 
+```
+        <fieldset>
+    <legend>Thông tin giao hàng</legend>
+    <label for="street">Đường:</label>
+    <input type="text" id="street" name="street">
+        </fieldset>
+```
