@@ -118,8 +118,21 @@ Lỗi 7 : Dòng 16: `<label>` không có for, `<input type = "....." id, name>`
 Sửa: `<label for = "terms">Điều khoản:</label> <input type = "checkbox" id = "terms" name = "terms" required>`
 
 Lỗi 8 : Dòng 20: Cuối form nên là button để gửi
-Sửa: <button type="submit">Gửi</button>
+Sửa: `<button type="submit">Gửi</button>`
 
 ## Câu C2
         <input type = "text" id="account" name="account" pattern="[A-Za-z0-9]{3-20}" placeholder="Tên tài khoản">
-1. `<input type = "t>
+1. `<input type = "text" pattern = "[0-9]{12}" placeholder = "Số CCCD/CMND>`
+
+    `<input type = "text pattern = "[0-9]{10,15}" placeholder = "Số tài khoản>`
+
+2. HTML5 validation không đủ an toàn cho ứng dụng ngân hàng vì HTML5 có thể dễ dàng bị vô hiệu hóa khi người dùng chỉ cần mở DevTools và xóa đi các thuộc tính như required và pattern dễ dàng
+
+3. 3 loại validation mà HTML5 validation không thể làm:
+- Kiểm tra dữ liệu trùng lặp: HTML5 không thể tự truy cập vào database
+- Kiểm tra sự hợp lý giữa các ô nhập vì HTML5 chỉ kiểm tra từng ô độc lập
+- Kiểm tra điều kiện : HTML5 không thể thay đổi thuộc tính theo thời gian thực
+
+4. Các rủi ro khi chỉ validate ở frontend mà không validate ở backend:
+- Bị tấn công, phá hoại dữ liệu: Chỉ cần mở DevTools thì hacker có thể chèn mã độc, xóa dữ liệu
+- Gian lận giao dịch: Hacker có thể can thiệp vào các gói tin gửi đi để làm thay đổi các giá trị của nó (đặc biệt là với những giao dịch chuyển tiền)
