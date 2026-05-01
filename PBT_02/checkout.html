@@ -57,15 +57,15 @@
         <label for="e-wallet">Ví điện tử</label>
         <br>
         <label for="Discount">Discount</label>
-        <input type="text" pattern="SALE[0-9]{4}">
+        <input type="text" id="Discount" name="Discount" pattern="SALE[0-9]{4}">
     </fieldset>
 
     <fieldset>
         <legend>Thông tin giao hàng</legend>
         <label for="shipping_date">Ngày giao hàng</label>
-        <input type="date" id="shipping_date" min="2026-04-30">
+        <input type="date" id="shipping_date" name="shipping_date" min="2026-04-30">
         <label for="time">Khung giờ giao hàng</label>
-        <select id="time">
+        <select id="time" name="time">
             <option value="">-- Chọn khung giờ </option>
             <option value="Sáng">8h-12h</option>
             <option value="Chiều">14h-18h</option>
@@ -73,7 +73,7 @@
         </select>
         <br>
         <label for="shipping_time">Số ngày</label>
-        <input type="range" id="shipping_time" min="1" max="7" step="1">
+        <input type="range" id="shipping_time" name="shipping_time" min="1" max="7" step="1">
     </fieldset>
 
     <button type="submit" aria-label="Xác nhận đặt hàng">Xác nhận</button>

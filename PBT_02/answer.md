@@ -89,3 +89,37 @@ Ví dụ:
 
 - Dùng cách 1 khi ảnh không cần mô tả, cách 2 dùng khi ảnh cần mô tả
 - Trong thực tế, cách 1 được sử dụng để làm thumbnail còn cách 2 dùng khi cần mô tả về 1 sản phẩm
+
+## Phần C: Phân tích và suy luận
+
+## Câu C1:
+
+Lỗi 1: Dòng 2 — Input "Tên" không có `<label for="...">`, vi phạm accessibility
+Sửa: `<label for="name">Tên:</label> <input type="text" id="name" name="name" required>`
+
+Lỗi 2: Dòng 4 - Input type="email" không có `<label for =""....>` vi phạm accessibility
+Sửa: `<label for="email">Email:</label> <input type ="email" id = "email" name = "email"required>`
+
+Lỗi 3: Dòng 6 - Input type="password" không có `<label for = "...">` vi phạm accessibility
+
+Sửa: `<label for="password">Password:</label> <input type ="password" id = "password" name = "password" required>`
+
+Lỗi 4: Dòng 7: Input type="password" không có `<label for = "...">` vi phạm accessibility
+
+Sửa: `<label for="repassword">Password:</label> <input type ="password" id = "repassword" name = "repassword" required>`
+
+Lỗi 5: Dòng 9: Input "Phone không có `<label for="...">`, vi phạm accessibility
+Sửa: `<label for="tel">Số điện thoại:</label> <input type="tel" id="tel" name="tel" required>`
+
+Lỗi 6: Dòng 11: `<select>` không có `<label for="...">`, vi phạm accessibility
+Sửa : `<label for="city">Thành phố:</label> <select id = "city"></select required>`
+
+Lỗi 7 : Dòng 16: `<label>` không có for, `<input type = "....." id, name>`
+Sửa: `<label for = "terms">Điều khoản:</label> <input type = "checkbox" id = "terms" name = "terms" required>`
+
+Lỗi 8 : Dòng 20: Cuối form nên là button để gửi
+Sửa: <button type="submit">Gửi</button>
+
+## Câu C2
+        <input type = "text" id="account" name="account" pattern="[A-Za-z0-9]{3-20}" placeholder="Tên tài khoản">
+1. `<input type = "t>

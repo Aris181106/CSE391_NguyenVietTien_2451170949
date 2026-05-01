@@ -10,25 +10,25 @@
         <fieldset>
         <legend>Thông tin cá nhân</legend>
         <label for="name">Họ và tên</label>
-        <input type="text" id="name"  required minlength="2" maxlength="50" placeholder="Họ và tên">
+        <input type="text" id="name"  name="name" minlength="2" maxlength="50" placeholder="Họ và tên">
         <br>
         <label for="email">Email</label>
-        <input type="email" id="email" required placeholder="email">
+        <input type="email" id="email" name="email" placeholder="email">
         <br>
         <label for="tel">Số điện thoại</label>
-        <input type="tel" id="tel" pattern="[0-9]{10}" placeholder="Số điện thoại"> 
+        <input type="tel" id="tel" name="phone" pattern="[0-9]{10}" placeholder="Số điện thoại"> 
         <br>
         <label for="date">Ngày</label>
-        <input type="date" id="date" max="2026-04-29">
+        <input type="date" id="date" name="date" max="2026-04-29">
         <br>
         </fieldset>
         <fieldset>
         <legend>Tài khoản</legend>
         <label for="account">Tài khoản</label>
-        <input type = "text" id="account" pattern="[A-Za-z0-9]{3-20}" placeholder="Tên tài khoản">
+        <input type = "text" id="account" name="account" pattern="[A-Za-z0-9]{3-20}" placeholder="Tên tài khoản">
         <br>
         <label for="password">Mật khẩu</label>
-        <input type="password" id="password" minlength="8" pattern="(?=.*\d)(?=.*[A-Z])[A-Za-z0-9].{8,}" placeholder="Mật khẩu">
+        <input type="password" id="password" name="password" minlength="8" pattern="(?=.*\d)(?=.*[A-Z])[A-Za-z0-9].{8,}" placeholder="Mật khẩu">
         <br>
         </fieldset>
         <fieldset>
@@ -36,7 +36,7 @@
         <label for="Shipping info">Thông tin khách hàng</label>
         <br>
         <label for="address">Thành phố</label>
-        <select id="address">
+        <select id="address" name="address">
             <option value="">-- Chọn thành phố -- </option>
             <option value="Hà Nội">Hà Nội</option>
             <option value="Hà Nam">Hà Nam</option>
@@ -55,7 +55,7 @@
         <input type="radio" id="Khác" name="gender">
         <label for="Khác">Khác</label>
         <br>
-        <input type="checkbox" id="dieukhoan" required>
+        <input type="checkbox" id="dieukhoan" name="dieukhoan" required>
         <label for="dieukhoan">Tôi đồng ý với các điều khoản trên</label>
         </fieldset>
 
