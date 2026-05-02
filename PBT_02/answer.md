@@ -22,6 +22,8 @@
 
 10. type = "radio" -> Ô chọn 1 trong nhiều đáp án, yêu cầu phải được tích -> Dùng để làm khảo sát
 
+- Nguồn tham chiếu : tuan_1_html5/07_forms_interactive.md-3. ⚙️ Core Technical Truth - Tất cả Input Types HTML5
+
 ## Câu A2:
 
 Trường hợp 1
@@ -49,9 +51,13 @@ Trường hợp 5
 
 - Hệ thống hoạt động bình thường, không có lỗi gì
 
+- Nguồn tham chiếu : tuan_1_html5/07_forms_interactive.md-3. ⚙️ Core Technical Truth - Tất cả Input Types HTML5
+
 ## Câu A3
 
 1. `<label for="email">` quan trong cho screen reader bởi vì screen reader sẽ đọc email edit text, giúp người dùng biết ô này để nhập gì
+
+- Nguồn tham chiếu : tuan_1_html5/07_forms_interactive.md-3. ⚙️ Core Technical Truth - Accessibility — Form cho mọi người
 
 2. Dùng `<fieldset>` + `<legend>` khi nhập các thông tin có liên quan đến nhau
 
@@ -63,15 +69,24 @@ Ví dụ:
     <input type="text" id="street" name="street">
         </fieldset>
 ```
+
+- Nguồn tham chiếu : tuan_1_html5/07_forms_interactive.md-3. ⚙️ Core Technical Truth - Accessibility — Form cho mọi người
+
+
 3. `<aria-label>` dùng để mô tả icon nút, ví dụ trong phần accessibility, `<aria-label>` giúp screen reader hiểu được icon 🛒 là gửi đơn hàng
 
 - Không dùng `<aria-label>` khi đã có `<label>` vì sẽ bị lặp
 
+- Nguồn tham chiếu : tuan_1_html5/07_forms_interactive.md-3. ⚙️ Core Technical Truth - Accessibility — Form cho mọi người
 ## Câu A4
 
 1. Thuộc tính loading="lazy" trên thẻ `<img>` dùng để tải ảnh khi user scroll đến và làm cho trang web load nhanh hơn và không dùng cho ảnh đầu tiên (logo) mà user thấy.
 
+- Nguồn tham chiếu : tuan_1_html5/06_graphics_multimedia.md - 3. ⚙️ Core Technical Truth
+
 2. Cần dùng nhiều `<source>` trong thẻ `<video>` là để tránh việc có 1 `<source>` duy nhất bị lỗi thì còn có 1 `<source>` khác thay thế
+
+- Nguồn tham chiếu : tuan_1_html5/06_graphics_multimedia.md - 3. ⚙️ Core Technical Truth
 
 - 3 format video phổ biến:
 
@@ -79,16 +94,22 @@ Ví dụ:
 + mp4
 + ogg
 
+- Nguồn tham chiếu : tuan_1_html5/06_graphics_multimedia.md - 3. ⚙️ Core Technical Truth
+
 3. Thuộc tính alt trên `<img>` dùng để hiển thị thông tin khi ảnh gặp lỗi
 
 - alt cho ảnh iphone 16: `<img src="" alt="Iphone 16">`
 - alt cho ảnh trang trí: `<img src="" alt="Hình ảnh minh họa">`
 - alt cho ảnh biểu đồ doanh thu Q1/2026: `<img src="" alt="Doanh thu quý 1">`
 
+- Nguồn tham chiếu : tuan_1_html5/06_graphics_multimedia.md - 3. ⚙️ Core Technical Truth
+
 ## Câu A5
 
 - Dùng cách 1 khi ảnh không cần mô tả, cách 2 dùng khi ảnh cần mô tả
 - Trong thực tế, cách 1 được sử dụng để làm thumbnail còn cách 2 dùng khi cần mô tả về 1 sản phẩm
+
+- Nguồn tham chiếu : tuan_1_html5/06_graphics_multimedia.md - 3. ⚙️ Core Technical Truth
 
 ## Phần C: Phân tích và suy luận
 
@@ -120,11 +141,16 @@ Sửa: `<label for = "terms">Điều khoản:</label> <input type = "checkbox" i
 Lỗi 8 : Dòng 20: Cuối form nên là button để gửi
 Sửa: `<button type="submit">Gửi</button>`
 
+- Nguồn tham chiếu : tuan_1_html5/07_forms_interactive.md-3. ⚙️ Core Technical Truth - Tất cả Input Types HTML5
+
+
 ## Câu C2
         <input type = "text" id="account" name="account" pattern="[A-Za-z0-9]{3-20}" placeholder="Tên tài khoản">
 1. `<input type = "text" pattern = "[0-9]{12}" placeholder = "Số CCCD/CMND>`
 
     `<input type = "text pattern = "[0-9]{10,15}" placeholder = "Số tài khoản>`
+
+- Nguồn tham chiếu : tuan_1_html5/07_forms_interactive.md-3. ⚙️ Core Technical Truth - Tất cả Input Types HTML5
 
 2. HTML5 validation không đủ an toàn cho ứng dụng ngân hàng vì HTML5 có thể dễ dàng bị vô hiệu hóa khi người dùng chỉ cần mở DevTools và xóa đi các thuộc tính như required và pattern dễ dàng
 
