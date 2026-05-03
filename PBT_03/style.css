@@ -1,0 +1,42 @@
+*{box-sizing: border-box;}
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: rgb(0, 242, 255);
+    color: #000;
+    line-height: normal;
+}
+header{
+    background: radial-gradient();
+    padding: 20px;
+    text-decoration-color: white;
+}
+nav a{
+    text-decoration: none;
+    color: rgb(223, 255, 127);
+}
+nav a:hover{
+    text-decoration: underline;
+    color: rgb(255, 0, 64);
+}
+nav a:active{
+    font-weight: bold;
+    color: #000;
+}
+table{
+    border-collapse: collapse;
+}
+thead{
+    color: white;
+    background-color: rgba(0, 0, 0, 0.286);
+}
+tr:first-child(even){
+    background-color: rgb(220, 20, 63);
+}
+tr:hover{
+    background-color: greenyellow;
+}
+footer{
+    background-color: lightblue;
+    text-align: center;
+    color: rgb(255, 240, 127);
+}
