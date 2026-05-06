@@ -107,3 +107,13 @@ p.text {color: red;}                        /* Specificity: 0,1,1 */
 2. Layout bị vỡ là do sidebar + content có tổng độ dài lớn hơn container ( do không dùng border-box)
 
 3. 2 cách sửa : dùng border-box và sửa px của sidebar và content
+
+## Câu C2
+
+1. "Sản phẩm A" có font-size 20px và color green: Kế thừa từ `.card .title { font-size: 20px; }` và `.highlight { color: green !important; }`
+
+2. "Mô tả sản phẩm" có color blue: Kế thừa từ `.card p { color: inherit; }` và inherit giá trị color từ `.card { color: blue; }`
+
+3. "Sản phẩm B" có font-size 20px và color blue: Kế thừa từ `.card .title { font-size: 20px; }` và `.card { color: blue; }`
+
+4. "Mô tả sản phẩm B" có màu green do `.highlight { color: green !important; }`
