@@ -77,14 +77,23 @@
 ## Câu B3
 
 `* {color: brown;}`                          /* Specificity: 0,0,0 */
+
 p { color: green; }                          /* Specificity: 0,0,1 */
+
 .text { color: blue; }                      /* Specificity: 0,1,0 */
+
 p:hover {color: black;}                     /* Specificity: 0,1,0 */
+
 p:focus {color: darkcyan;}                  /* Specificity: 0,1,0 */
+
 p.text {color: red;}                        /* Specificity: 0,1,1 */
+
 #demo {color: yellow;}                      /* Specificity: 1,0,0 */
+
 #demo.text {color: pink;}                   /* Specificity: 1,1,0 */
+
 `<p id="demo" class="text highlight" style="color: aqua;">Hello World</p>`  /* Specificity: 1000+ */
+
 !important : Specificity vô hạn
 
 - Element cuối cùng sẽ hiển thị màu của !important vì !important có specificity score cao nhất
