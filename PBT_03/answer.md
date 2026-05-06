@@ -100,3 +100,10 @@ p.text {color: red;}                        /* Specificity: 0,1,1 */
 
 - Thay đổi thứ tự trong CSS File thì kết quả cũng không đổi do CSS ưu tiên specificity score chứ không phải vị trí
 
+## Câu C1
+
+1. Chiều rộng thực tế của sidebar: 342px và chiều rộng thực tế của content : 722px (content-box)
+
+2. Layout bị vỡ là do sidebar + content có tổng độ dài lớn hơn container ( do không dùng border-box)
+
+3. 2 cách sửa : dùng border-box và sửa px của sidebar và content
