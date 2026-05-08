@@ -1,0 +1,50 @@
+header{
+    position: fixed;
+    top: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: aqua;
+    height: 60px;
+    width: 100%;
+}
+nav a{
+    text-decoration: none;
+}
+img{
+    height: auto;
+}
+nav{
+    display: flex;
+    gap: 20px;
+}
+.sidebar{
+    position: sticky;
+    top: 80px;
+    width: 250px;
+    margin-top: 80px;
+    align-items: center;
+    justify-content: center;
+    z-index: 1000;
+    background-color: crimson;
+}
+.card{
+    position: relative;
+    border: 5px solid black;
+    display: flex;
+    width: 500px;
+    z-index: 999;
+}
+.badge{
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    color:white;
+    background-color: red;
+}
+button{
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+    border-radius: 50%;
+}
