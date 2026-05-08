@@ -18,3 +18,17 @@
 - absolute tham chiếu body và parent khi chúng có position khác static
 
 - Nguồn tham chiếu : tuan_2_css_core/12_css_positioning.md - 2. 🌐 Big Picture — 5 giá trị Position + 3. ⚙️ Core Technical Truth
+
+## Câu A2
+
+- Trường hợp 1: 4 items sẽ nằm ngang trên 1 hàng với tỉ lệ bằng nhau
+
+- Trường hợp 2: 6 items sẽ nằm trên 3 hàng, mỗi hàng gồm 2 items
+
+- Trường hợp 3: 3 items sẽ nằm trên cùng 1 hàng, 1 item ở đầu, 1 item ở giữa, 1 item ở cuối, các item cách đều nhau
+
+- Trường hợp 4: 3 items sẽ nằm trên cùng 1 hàng, item đầu chiếm 200px, item thứ hai chiếm 1 frame, item thứ ba chiếm 200px, mỗi item cách nhau 1 khoảng là 20px
+
+- Trường hợp 5: 7 items sẽ nằm trên 3 hàng, với 2 hàng đầu mỗi hàng chứa 3 items chiếm 1fr, cách nhau 10px và hàng cuối chỉ còn 1 item cuối cùng
+
+- Nguồn tham chiếu: tuan_2_css_core/11_box_model.md - 2. 🌐 Big Picture — Mọi element HTML là một "hộp" + 3. ⚙️ Core Technical Truth
