@@ -1,0 +1,32 @@
+*{
+    box-sizing: border-box;
+}
+header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+nav a{
+    text-decoration: none;
+}
+nav{
+    justify-content: center;
+    display: flex;
+    gap: 20px;
+}
+.registering{
+    display: flex;
+    gap: 20px;
+}
+.registering a{
+    text-decoration: none;
+}
+img{
+    height: 60px;
+}
+nav a:hover{
+    color: black;
+}
+.registering a:hover{
+    color: black;
+}
