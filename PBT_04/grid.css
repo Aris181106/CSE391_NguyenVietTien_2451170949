@@ -1,0 +1,61 @@
+*{
+    box-sizing: border-box;
+}
+header{
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    align-items: center;
+}
+logo img{
+    height: 60px;
+}
+nav a{
+    text-decoration: none;
+}
+nav{
+    display: flex;
+    gap: 20px;
+    justify-self: center;
+}
+.registering{
+    display: flex;
+    gap: 20px;
+    justify-self: end;
+}
+.registering a{
+    text-decoration: none;
+}
+.hero{
+    display: grid;
+    grid: 1/-1;
+    align-items: center;
+    justify-content: center;
+    background-color: aquamarine;
+}
+.container{
+    display: grid;
+    grid-template-columns: 200px 1fr 200px;
+}
+.content{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    width: 95%;
+    gap: 20px;
+}
+.card{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    border: 2px solid;
+}
+.card img{
+    height: 350px;
+}
+footer{
+    grid-column: 1 / -1;
+    background-color: black;
+    height: 200px;
+}
+footer p{
+    color: white;
+}
