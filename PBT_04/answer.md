@@ -45,3 +45,13 @@
 
 5. Card sản phẩm nên dùng cả grid và flex, grid dùng để chia các cột sản phẩm (nhiều sản phẩm trên cùng 1 hàng ở layout) còn flex dùng để cố định vị trí của các thành phần trong card(như là giá, text mô tả, nút mua)
 
+## Câu C2
+
+1. Nút Mua bị nhảy lên xuống là do chiều dài các card khác nhau
+-> Để sửa nút Mua không bị lên xuống, ta dùng margin-top: auto;
+
+2. item vẫn dính góc trái trên do dùng sai thuộc tính css
+-> Để sửa dùng align-items: center; và justify-content: center;
+
+3. Sidebar bị co lại do content quá dài
+-> Vì layout dùng display: flex; để các box nằm ngang, với sidebar chiếm 250px còn content chiếm tất cả phần còn lại nên sẽ làm sidebar bị co lại. Để khắc phục, ta thêm flex-shrink: 0 vào sidebar, đây là thuộc tính ngăn cho sidebar co lại
