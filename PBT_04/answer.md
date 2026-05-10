@@ -32,3 +32,16 @@
 - Trường hợp 5: 7 items sẽ nằm trên 3 hàng, với 2 hàng đầu mỗi hàng chứa 3 items chiếm 1fr, cách nhau 10px và hàng cuối chỉ còn 1 item cuối cùng
 
 - Nguồn tham chiếu: tuan_2_css_core/11_box_model.md - 2. 🌐 Big Picture — Mọi element HTML là một "hộp" + 3. ⚙️ Core Technical Truth
+
+## Câu C1
+
+1. Với navigation bar ngang thì nên dùng flexbox vì flexbox sẽ hiện các đề mục theo chiều ngang(phù hợp với navigation bar)
+
+2. Với lưới ảnh instagram(3 cột đều nhau, số ảnh không biết trước) thì dùng grid vì grid chia ảnh đều nhau dễ hơn flexbox
+
+3. Với layout blog, nên dùng grid vì có thể dễ chia hơn: grid-template-columns: 1fr 2fr; với 1fr cho sidebar và 2fr cho main content
+
+4. Footer với 4 cột thông tin nên dùng grid vì chia tỉ lệ dễ hơn với grid-template-columns: 1fr 1fr 1fr 1fr;
+
+5. Card sản phẩm nên dùng cả grid và flex, grid dùng để chia các cột sản phẩm (nhiều sản phẩm trên cùng 1 hàng ở layout) còn flex dùng để cố định vị trí của các thành phần trong card(như là giá, text mô tả, nút mua)
+
