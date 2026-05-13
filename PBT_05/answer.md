@@ -60,3 +60,9 @@ Breakpoint chuẩn dành cho các thiết bị khác nhau:
 - Desktop XL: 1400px, dành cho màn hình 4K ultrawide, lưới sản phẩm nên hiển thị 4-5 cột
 
 - Nguồn tham chiếu: tuan_3_css_advanced/13_creating_responsive_layouts.md - 3. ⚙️ Core Technical Truth
+
+## Câu A3
+
+- Chiểu rộng màn hình: 375px -> .container width: 337.5px
+
+- Chiều rộng màn hình: 600px -> .container width: 
