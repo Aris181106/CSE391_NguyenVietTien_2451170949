@@ -63,6 +63,14 @@ Breakpoint chuẩn dành cho các thiết bị khác nhau:
 
 ## Câu A3
 
-- Chiểu rộng màn hình: 375px -> .container width: 337.5px
+- Chiểu rộng màn hình: 375px -> .container width: 355px
 
-- Chiều rộng màn hình: 600px -> .container width: 
+- Chiều rộng màn hình: 600px -> .container width: 520px
+
+- Chiều rộng màn hình: 800px -> .container width: 700px
+
+- Chiều rộng màn hình: 1000px -> .container width: 940px
+
+- Chiều rộng màn hình: 1400px -> .container width: 1120px
+
+- Nguồn tham chiếu: tuan_2_css_core/11_box_model.md - 3. ⚙️ Core Technical Truth
