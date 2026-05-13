@@ -74,3 +74,78 @@ Breakpoint chuẩn dành cho các thiết bị khác nhau:
 - Chiều rộng màn hình: 1400px -> .container width: 1120px
 
 - Nguồn tham chiếu: tuan_2_css_core/11_box_model.md - 3. ⚙️ Core Technical Truth
+
+## Câu A4
+
+1. Variables - Sửa 1 chỗ trong CSS -> Tất cả tự đổi: Thay vì phải đặt giá trị nhiều lần cho các thuộc tính thì chỉ cần dùng Variables
+
+- Ví dụ: Thay vì
+
+``
+.btn-primary {
+    background: #7c3aed; 
+    color: white;
+    border-radius: 6px;
+}
+``
+
+- Thì ta có Variables:
+
+``
+$color-primary: #7c3aed;
+$radius-sm: 6px
+.btn-primary {
+    background: $color-primary;     
+    color: white;
+    border-radius: $radius-sm;
+}
+``
+
+- Dùng để tái sử dụng thuộc tính cho các nút có chức năng giống nhau trong website
+
+2. Nesting - Viết CSS lồng nhau 
+
+- Ví dụ nesting:
+
+``
+.navbar {
+    background: #1a202c;
+    padding: $space-4;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    // & = tham chiếu đến selector cha (.navbar)
+    &__logo {
+        color: white;
+        font-size: $font-size-lg;
+        font-weight: 700;
+        text-decoration: none;
+    }
+}
+``
+
+- CSS sẽ hiểu là logo nằm trong navbar(.navbar__logo) với các thuộc tính của logo như color: white, font-weight: 700
+
+3. @mixin và @include: mixin sẽ hoạt động như 1 hàm, có thể đặt thuộc tính và sử dụng nhiều lần trong code, còn @include là phương thức để gọi hàm mixins đó
+
+- Ví dụ:
+
+``
+@mixins abc{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+} 
+.box{
+    @include abc;
+}
+
+- Khi đó, css sẽ hiểu như sau:
+
+``
+.box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
