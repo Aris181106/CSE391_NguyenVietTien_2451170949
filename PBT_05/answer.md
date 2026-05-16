@@ -149,3 +149,17 @@ $radius-sm: 6px
     justify-content: center;
     align-items: center;
 }
+
+## Phần C: Phân tích
+
+## Câu C1
+
+- Navigation của trang tiki không thay đổi, chỉ xóa các icon khi device là mobile hoặc desktop
+
+- Lưới content không thay đổi, có thêm phần scroll ngang
+
+- Không elements nào bị ẩn
+
+- Font size giữ nguyên
+
+          
