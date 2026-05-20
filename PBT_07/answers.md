@@ -160,3 +160,46 @@ console.log("" == false);
 - Từ giờ trở đi, nên sử dụng `===` vì trong JavaScript, `===` là Strict equality(so sánh chặt chẽ), sẽ không tự chuyển type như `==`(Loose Equality)
 
 - Nguồn tham chiếu: tuan_4_javascript_basics/02_getting_started.md - 3. ⚙️ Core Technical Truth
+
+## Câu A4:
+
+- Các giá trị Falsy trong JavaScript:
+
+- false
+
+- 0n
+
+- ""
+
+- null
+
+- undefined
+
+- NaN
+
+```javascript
+if ("0") console.log("A");           
+if ("") console.log("B");            
+if ([]) console.log("C");           
+if ({}) console.log("D");            
+if (null) console.log("E");        
+if (0) console.log("F");           
+if (-1) console.log("G");            
+if (" ") console.log("H");         
+```
+
+- if ("0") console.log("A"); có in do "0" là string khác rỗng
+
+- if ("") console.log("B"); không in do "" là string rỗng
+
+- if ([]) console.log("C"); có in vì mảng rỗng là giá trị truthy
+
+- if ({}) console.log("D"); có in vì object rỗng là giá trịtruthy
+
+- if (null) console.log("E"); không in vì null là giá trị falsy
+
+- if (0) console.log("F"); không in vì không là giá trị falsy
+
+- if (-1) console.log("G"); có in vì là giá trị truthy
+
+- if (" ") console.log("H"); có in vì chuỗi có chứa 1 dấu cách nên không phải chuỗi rỗng
