@@ -52,3 +52,60 @@ console.log("Ngoài block:", a);
 - Output thực tế đoạn 5 : Trong block: 2, Ngoài block: 1 
 
 - Nguồn tham chiếu: tuan_4_javascript_basics/02_getting_started.md + 3. ⚙️ Core Technical Truth
+
+## Câu A2:
+
+```javascript
+console.log(typeof null);      
+console.log(typeof undefined);         
+console.log(typeof NaN);              
+console.log("5" + 3);                
+console.log("5" - 3);                 
+console.log("5" * "3");             
+console.log(true + true);         
+console.log([] + []);              
+console.log([] + {});              
+console.log({} + []);              
+```
+
+- Dự đoán output console.log(typeof null); là: object
+
+- Output thực tế console.log(typeof null); là: object
+
+- Dự đoán output console.log(typeof undefined); undefined
+
+- Output thực tế console.log(typeof undefined); undefined
+
+- Dự đoán output console.log(typeof NaN); number
+ 
+- Output thực tế console.log(typeof NaN); number
+
+- Dự đoán output console.log("5" + 3); 53
+
+- Output thực tế console.log("5" + 3); 53
+
+- Dự đoán output console.log("5" - 3); 2
+
+- Output thực tế console.log("5" - 3); 2
+
+- Dự đoán output console.log("5" * "3"); 15
+
+- Output thực tế console.log("5" * "3"); 15
+ 
+- Dự đoán output console.log(true + true); true
+
+- Output thực tế console.log(true + true); true
+
+- Dự đoán output console.log([] + []);
+
+- Output thực tế console.log([] + []); rỗng
+
+- Dự đoán output console.log([] + {});
+
+- Output thực tế console.log([] + {}); [object Object]
+
+- Dự đoán output console.log({} + []);
+
+- Output thực tế console.log({} + []); [object Object]
+
+- "5" + 3 có kết quả khác "5" - 3 là vì trong phép cộng sẽ ưu tiên string nếu có toán hạng là 1 string còn phép trừ chỉ áp dụng cho number nên sẽ convert sang number
