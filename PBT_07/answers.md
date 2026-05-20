@@ -109,3 +109,54 @@ console.log({} + []);
 - Output thực tế console.log({} + []); [object Object]
 
 - "5" + 3 có kết quả khác "5" - 3 là vì trong phép cộng sẽ ưu tiên string nếu có toán hạng là 1 string còn phép trừ chỉ áp dụng cho number nên sẽ convert sang number
+
+- Nguồn tham chiếu: tuan_4_javascript_basics/03_data_types_variables.md - 3. ⚙️ Core Technical Truth
+
+## Câu A3:
+
+```javascript
+console.log(5 == "5");              
+console.log(5 === "5");             
+console.log(null == undefined);      
+console.log(null === undefined);     
+console.log(NaN == NaN);         
+console.log(0 == false);            
+console.log(0 === false);          
+console.log("" == false);       
+```
+
+- Dự đoán output console.log(5 == "5"); true
+
+- Output thực tế console.log(5 == "5"); true
+
+- Dự đoán output console.log(5 === "5"); false
+
+- Output thực tế console.log(5 === "5"); false
+
+- Dự đoán output console.log(null == undefined); true
+
+- Output thực tế console.log(null == undefined); true
+
+- Dự đoán output console.log(null === undefined); false
+
+- Output thực tế console.log(null === undefined); false
+
+- Dự đoán output console.log(NaN == NaN); true
+
+- Output thực tế console.log(NaN == NaN); false
+
+- Dự đoán output console.log(0 == false); true
+
+- Output thực tế console.log(0 == false); true
+
+- Dự đoán output console.log(0 === false); false
+
+- Output thực tế console.log(0 === false); false
+
+- Dự đoán output console.log("" == false); true
+
+- Output thực tế console.log("" == false); true
+
+- Từ giờ trở đi, nên sử dụng `===` vì trong JavaScript, `===` là Strict equality(so sánh chặt chẽ), sẽ không tự chuyển type như `==`(Loose Equality)
+
+- Nguồn tham chiếu: tuan_4_javascript_basics/02_getting_started.md - 3. ⚙️ Core Technical Truth
