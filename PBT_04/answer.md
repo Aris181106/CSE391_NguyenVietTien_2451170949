@@ -2,17 +2,17 @@
 
 ## Câu A1
 
-1.position    |   2.Vẫn chiếm chỗ trong flow? |          3.Tham chiếu vị trí        |   4.Cuộn theo trang   |         5.Use case         |
+|1.position | 2.Vẫn chiếm chỗ trong flow? | 3.Tham chiếu vị trí | 4.Cuộn theo trang | 5.Use case |
+|-----------|-----------------------------|---------------------|-------------------|------------|
+|1.static | 2.Có | 3.Vị trí mặc định | 4.Có | 5.Mặc định |
 
-1.static      |             2.Có              |          3.Vị trí mặc định          |        4.Có           |         5.Mặc định         |
+|1.relative | 2.Có | 3.Vị trí mặc định | 4.Có | 5.Anchor cho absolute |
 
-1.relative    |             2.Có              |          3.Vị trí mặc định          |        4.Có           |    5.Anchor cho absolute   |
+|1.absolute | 2.Không | 3.Bám vào cha relative gần nhất | 4.Có | 5.Badge, dropdown |
 
-1.absolute    |            2.Không            |    3.Bám vào cha relative gần nhất  |        4.Có           |      5.Badge, dropdown     |
+|1.fixed | 2.Không | 3.Bám vào viewport | 4.Không | 5.Chat button |
 
-1.fixed       |            2.Không            |          3.Bám vào viewport         |       4.Không         |      5.Chat button         |
-
-1.sticky      |             2.Có              |    3.Bám vào viewport (khi dính)    |       4.Không         |          5.Navbar          |
+|1.sticky | 2.Có | 3.Bám vào viewport (khi dính) | 4.Không | 5.Navbar |
 
 - nearest position ancestor là phần tử cha có position gần nhất
 - absolute tham chiếu body và parent khi chúng có position khác static
@@ -48,10 +48,10 @@
 ## Câu C2
 
 1. Nút Mua bị nhảy lên xuống là do chiều dài các card khác nhau
--> Để sửa nút Mua không bị lên xuống, ta dùng margin-top: auto;
+   -> Để sửa nút Mua không bị lên xuống, ta dùng margin-top: auto;
 
 2. item vẫn dính góc trái trên do dùng sai thuộc tính css
--> Để sửa dùng align-items: center; và justify-content: center;
+   -> Để sửa dùng align-items: center; và justify-content: center;
 
 3. Sidebar bị co lại do content quá dài
--> Vì layout dùng display: flex; để các box nằm ngang, với sidebar chiếm 250px còn content chiếm tất cả phần còn lại nên sẽ làm sidebar bị co lại. Để khắc phục, ta thêm flex-shrink: 0 vào sidebar, đây là thuộc tính ngăn cho sidebar co lại
+   -> Vì layout dùng display: flex; để các box nằm ngang, với sidebar chiếm 250px còn content chiếm tất cả phần còn lại nên sẽ làm sidebar bị co lại. Để khắc phục, ta thêm flex-shrink: 0 vào sidebar, đây là thuộc tính ngăn cho sidebar co lại
