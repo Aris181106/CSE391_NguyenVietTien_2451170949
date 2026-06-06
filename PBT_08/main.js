@@ -1,29 +1,29 @@
 
 //Function Declaration
-// function tinhThueBaoHiem(luong){
-//     let LuongSauThue = 0;
-//     if(luong > 11){
-//         LuongSauThue = luong - (luong * 0.1);
-//         return `Luong cua ban la: ${LuongSauThue}`
-//     }
-//     else{
-//         return `Luong cua ban la: ${luong}`
-//     }
-// }
-// console.log(tinhThueBaoHiem(12));
+function tinhThueBaoHiem(luong){
+    let LuongSauThue = 0;
+    if(luong > 11){
+        LuongSauThue = luong - (luong * 0.1);
+        return `Luong cua ban la: ${LuongSauThue}`
+    }
+    else{
+        return `Luong cua ban la: ${luong}`
+    }
+}
+console.log(tinhThueBaoHiem(12));
 
 //Function Expression
-// const TinhLuong = function(luong){
-//     let LuongSauThue = 0;
-//     if(luong > 11){
-//         LuongSauThue = luong - (luong * 0.1);
-//         return `Luong cua ban la: ${LuongSauThue}`
-//     }
-//     else{
-//         return `Luong cua ban la: ${luong}`
-//     }
-// }
-// console.log(TinhLuong(13));
+const TinhLuong = function(luong){
+    let LuongSauThue = 0;
+    if(luong > 11){
+        LuongSauThue = luong - (luong * 0.1);
+        return `Luong cua ban la: ${LuongSauThue}`
+    }
+    else{
+        return `Luong cua ban la: ${luong}`
+    }
+}
+console.log(TinhLuong(13));
 
 //Arrow Function
 const greet = (name) => {
