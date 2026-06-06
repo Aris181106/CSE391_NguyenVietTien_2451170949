@@ -203,3 +203,50 @@ if (" ") console.log("H");
 - if (-1) console.log("G"); có in vì là giá trị truthy
 
 - if (" ") console.log("H"); có in vì chuỗi có chứa 1 dấu cách nên không phải chuỗi rỗng
+
+
+## PHẦN C — SUY LUẬN (20 điểm)
+
+### Câu C1 (10đ) — Debug JavaScript
+
+```javascript
+function tinhGiaGiamGia(giaBan, phanTramGiam) {
+    if (phanTramGiam < 0 || phanTramGiam > 100) {
+        return "Phần trăm giảm không hợp lệ"
+    }
+    
+    var giamGia = giaBan * phanTramGiam / 100
+    let giaSauGiam = giaBan - giamGia
+    
+    if (giaSauGiam = 0) {
+        console.log("Sản phẩm miễn phí!")
+    }
+    
+    return giaSauGiam
+}
+
+// Test
+const gia = tinhGiaGiamGia("100000", 20)
+console.log("Giá sau giảm: " + gia + "đ")
+
+const gia2 = tinhGiaGiamGia(50000, 110)
+console.log("Giá: " + gia2)
+
+for (var i = 0; i < 5; i++) {
+    setTimeout(function() {
+        console.log("Item " + i)
+    }, 1000)
+}
+```
+
+- Lỗi 1: if (giaSauGiam = 0), sai dùng phép gán "=" -> sửa thành if (giaSauGiam === 0)
+
+- Lỗi 2: "100000", truyền sai kiểu dữ liệu , cần truyền number không phải string -> Sửa thành 100000
+
+- Lỗi 3: Không kiểm tra kiểu dữ liệu của giá bán -> Thêm if (typeof giaBan !== "number")
+
+- Lỗi 4: Không kiểm tra kiểu dữ liệu của phần trăm giảm giá -> if (typeof phanTramGiam !== "number")
+
+- Lỗi 5: Không kiểm tra giá trị của giá bán -> Thêm if(giaBan > 0)
+
+- Lỗi 6: for (var i = 0; i < 5; i++) vì var chỉ tạo 1 biến dùng chung nên sẽ in ra các kết quả giống nhau -> Sửa thành (let i = 0; i < 5; i++)
