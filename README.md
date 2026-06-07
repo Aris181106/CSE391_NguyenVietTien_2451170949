@@ -38,3 +38,15 @@ PBT_06:
 - Phần B: 100%
 - Phần C: 100%
 - Phần D: 0%
+
+PBT_07: 
+- Phần A: 100%
+- Phần B: 100%
+- Phần C: 100%
+- Phần D: 0%
+
+PBT_08: 
+- Phần A: 100%
+- Phần B: 100%
+- Phần C: 100%
+- Phần D: 0%
